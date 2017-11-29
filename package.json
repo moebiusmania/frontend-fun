@@ -1,0 +1,13 @@
+{
+  "name": "frontend-fun",
+  "version": "1.0.0",
+  "description": "slides",
+  "main": "index.js",
+  "repository": "https://github.com/moebiusmania/frontend-fun",
+  "author": "Salvatore Laisa <moebiusmania@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
