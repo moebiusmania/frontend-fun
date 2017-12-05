@@ -1,4 +1,18 @@
 
-ul > li{
+.reveal ul > li{
   list-style: circle;
+  margin: 11px 0;
+  opacity: 0.9;
 }
+
+h2 > small,
+.reveal ul > li > span{
+  color: #fff;
+  background: #FF5E99;
+  text-shadow: none;
+  opacity: 0.9;
+}
+
+/* .reveal ul > li > span{
+  color: #13DAEC;
+} */

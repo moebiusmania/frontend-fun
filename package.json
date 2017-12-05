@@ -1,13 +1,18 @@
 {
   "name": "frontend-fun",
   "version": "1.0.0",
-  "description": "slides",
+  "description": "Slides & resource related to the talk",
   "main": "index.js",
   "repository": "https://github.com/moebiusmania/frontend-fun",
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "live-server ./slides -p 8080",
+    "deploy": "gh-pages -d slides"
+  },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "live-server": "^1.2.0"
   }
 }
