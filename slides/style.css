@@ -6,11 +6,17 @@
 }
 
 h2 > small,
-.reveal ul > li > span{
+.reveal ul > li > span,
+h1 span{
   color: #fff;
   background: #FF5E99;
   text-shadow: none;
   opacity: 0.9;
+}
+
+h1 span{
+  display: inline-block;
+  padding: 5px 15px;
 }
 
 /* .reveal ul > li > span{
