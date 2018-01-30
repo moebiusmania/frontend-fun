@@ -7,7 +7,7 @@
 
 h2 > small,
 .reveal ul > li > span,
-h1 span,
+h1 span, h3 span,
 .reveal p span{
   color: #fff;
   background: #FF5E99;
