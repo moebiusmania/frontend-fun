@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./style.css">
   <script src="https://cdn.rawgit.com/hakimel/reveal.js/master/js/reveal.js"></script>
 
+  <script src="./examples/gamepad.js"></script>
+
   <title>Making frontend fun again!</title>
 </head>
 <body>
@@ -104,9 +106,26 @@
         <h3>We also have benchmarks based on how many "rows-per-seconda-a-framework-can-draw"</h3>
       </section>
 
+      <section>
+        <h1>That's the most super fast awesomeness ever! Isn't it?</h1>
+      </section>
+
       <section class="noborder">
         <img class="grumpy" src="./assets/grumpy.jpg" alt="">
       </section>
+
+      <!-- <section>
+        <h1>Sometimes time is against us...</h1>
+      </section>
+
+      <section class="noborder">
+        <h3>2006 "era"</h3>
+        <img src="" alt="">
+      </section>
+
+      <section class="noborder">
+        <img src="./assets/troll.jpg" alt="">
+      </section> -->
 
       <section>
         <h1>The "common" ones...</h1>
@@ -115,25 +134,50 @@
 
       <section>
         <ul>
-          <li class="fragment">audio/video tag</li>
-          <li class="fragment">Geolocation</li>
-          <li class="fragment">Canvas</li>
-          <li class="fragment">CSS & JS animations</li>
-          <li class="fragment">Web GL</li>
-          <li class="fragment">Indexed DB</li>
-          <li class="fragment">Web Notifications</li>
+          <li class="fragment">
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content" target="_blank">audio/video tag</a>
+          </li>
+          <li class="fragment">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation" target="_blank">Geolocation</a>
+          </li>
+          <li class="fragment">
+            <a href="https://www.createjs.com/easeljs" target="_blank">Canvas</a>
+          </li>
+          <li class="fragment">
+            <a href="https://github.com/MakhBeth/Talks/tree/Web-Animation-Api-2-the-vengeance" target="_blank">CSS & JS animations</a>
+          </li>
+          <li class="fragment">
+            <a href="https://threejs.org/" target="_blank">Web GL</a>
+          </li>
+          <li class="fragment">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" target="_blank">Indexed DB</a>
+          </li>
+          <li class="fragment">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API" target="_blank">Web Notifications</a>
+          </li>
         </ul>
-        <p><a class="fragment" href="https://developer.mozilla.org/en-US/docs/WebAPI">GOTO AND DOCUMENT!</a></p>
+        <p><a class="fragment" href="https://developer.mozilla.org/en-US/docs/WebAPI" target="_blank">GOTO AND DOCUMENT!</a></p>
       </section>
 
       <section>
         <h3>What other kind of less boring stuff we can do?</h3>
         <ul>
-          <li class="fragment">slides <i>(mind loop!)</i></li>
-          <li class="fragment">2D/3D games</li>
+          <li class="fragment">
+            <a href="https://revealjs.com/#/" target="_blank">slides <i>(like these ones...)</i></a>
+          </li>
+          <li class="fragment">
+            2D/<a href="https://github.com/kripken/BananaBread/" target="_blank">3D</a> games 
+          </li>
           <li class="fragment">(interactive) movies/animations</li>
-          <li class="fragment">[Node.js] IoT apps</li>
-          <li class="fragment">[Node.js] Your own tasks automations</li>
+          <li class="fragment">
+            <a href="https://dev.to/johnmunsch/hooking-your-javascript-app-to-ifttt" target="_blank">Your own automations</a>
+          </li>
+          <li class="fragment">
+            <a href="https://developer.atlassian.com/blog/2015/11/scripting-with-node/" target="_blank">[Node.js] CLI tools</a>
+          </li>
+          <li class="fragment">
+            <a href="http://johnny-five.io/" target="_blank">[Node.js] IoT apps</a>
+          </li>
         </ul>
         <p class="fragment">amazingly, they <span>don't</span> require forms or tables!</p>
       </section>
@@ -156,14 +200,51 @@
         <h2><small>--- ("engine room... WARP SPEED!") ---</small></h2>
       </section>
 
-      <section>
+      <section class="noborder">
         <h3>Gamepad API</h3>
         <p>Plug & play... in the browser!</p>
+        <img src="" alt="">
       </section>
 
       <section>
+<pre><code data-trim>
+  window.addEventListener("gamepadconnected", (e) => { 
+    console.log("Gamepad connected at index %d: %s. %d buttons, %d axes.",
+      e.gamepad.index, e.gamepad.id, 
+      e.gamepad.buttons.length, 
+      e.gamepad.axes.length); 
+  });
+</code></pre>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API">Using the Gamepad API</a></p>
+      </section>
+
+      <section>
+        <h3>Issues</h3>
+        <ul>
+          <li>status: <span>working draft</span></li>
+          <li>works only in Chrome & Firefox but...</li>
+          <li>... with incosistent API </li>
+          <li>Xbox controller on MacOS requires addiotional drivers</li>
+        </ul>
+      </section>
+
+      <section class="noborder">
         <h3>Browser API (???)</h3>
         <p>Oh, that Nolan movie with Leonardo Dicaprio!</p>
+        <img src="./assets/inception.gif" alt="">
+      </section>
+
+      <section>
+<pre><code data-trim>
+  const browser = document.querySelector('iframe');
+
+  browser.reload();
+  browser.goBack();
+  browser.goForward();
+  browser.zoom(zoomFactor);
+  
+</code></pre>
+        <h3>I hope you will find some meaning about this...</h3>
       </section>
 
       <section>
