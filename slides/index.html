@@ -17,6 +17,8 @@
 </head>
 <body>
 
+  <gamepad-api></gamepad-api>
+
   <div class="reveal">
     <div class="slides">
       <section class="first">
@@ -102,30 +104,18 @@
 
       </section>
 
-      <section>
-        <h3>We also have benchmarks based on how many "rows-per-seconda-a-framework-can-draw"</h3>
-      </section>
-
-      <section>
-        <h1>That's the most super fast awesomeness ever! Isn't it?</h1>
-      </section>
-
       <section class="noborder">
+        <h3>We also have benchmarks based on how many "rows-per-seconda-a-framework-can-draw"</h3>
+        <img src="./assets/benchmark.png" alt="">
+      </section>
+
+      <section>
+        <h1>That's the most awesomeness ever! Isn't it?</h1>
+      </section>
+
+      <section class="noborder" data-transition="zoom" data-background-color="#fff">
         <img class="grumpy" src="./assets/grumpy.jpg" alt="">
       </section>
-
-      <!-- <section>
-        <h1>Sometimes time is against us...</h1>
-      </section>
-
-      <section class="noborder">
-        <h3>2006 "era"</h3>
-        <img src="" alt="">
-      </section>
-
-      <section class="noborder">
-        <img src="./assets/troll.jpg" alt="">
-      </section> -->
 
       <section>
         <h1>The "common" ones...</h1>
@@ -133,7 +123,7 @@
       </section>
 
       <section>
-        <ul>
+        <ul class="links">
           <li class="fragment">
             <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content" target="_blank">audio/video tag</a>
           </li>
@@ -236,7 +226,7 @@
 
       <section>
 <pre><code data-trim>
-  // An <iframe> can become a nested target
+  // An iframe tag can become a nested target
   const browser = document.querySelector('iframe');
 
   browser.reload();
@@ -250,32 +240,63 @@
 
       <section>
         <h3>Web Audio</h3>
-        <p>Musician, rejoice! (pt. 1)</p>
+        <h3 class="fragment"><span>processing and synthesizing audio!</span></h3>
+        <p class="fragment">thought it's <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API" target="_blank">a bit hard</a> ... but many 
+          <a href="http://webaudioapi.com/samples/" target="_blank">resources</a> 
+          are available.</p>
       </section>
 
       <section class="noborder">
-        <p>did you know that you can also build a <span>guitar tuner</span> out of it?</p>
+        <p>you can also build a <span>guitar tuner</span> out of it!</p>
         <img src="./assets/tuner.png" alt="">
         <p><a href="https://aerotwist.com/blog/guitar-tuner/">https://aerotwist.com/blog/guitar-tuner/</a></p>
       </section>
 
       <section>
         <h3>Web MIDI</h3>
-        <p>Musician, rejoice! (pt. 2)</p>
+        <p><span>Musical Instrument Digital Interface</span></p>
+        <ul class="fragment">
+          <li>Web audio manipulates sound, MIDI executes sounds</li>
+          <li>Musical instruments can have MIDI capabilities</li>
+          <li>you can create music or connect an instrument to the computer</li>
+        </ul>
       </section>
 
       <section>
         <h3>Bluetooth</h3>
-        <p>Proximity has never been closer!</p>
+        <p>Proximity has never been <a href="https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web" target="_blank">closer</a>!</p>
+<pre><code data-trim>
+  navigator.bluetooth.requestDevice(options).then(device => { 
+    log('> Name: ' + device.name); 
+    log('> Id: ' + device.id); 
+    log('> Connected: ' + device.gatt.connected); 
+  }) .catch(error => { log('Argh! ' + error); });
+</code></pre>
       </section>
 
       <section>
+        <h3>Bluetooth: heads up!</h3>
+        <ul>
+          <li>works only in Chrome</li>
+          <li>GATT compatible</li>
+          <li>API based on promises</li>
+          <li>there is a <a href="https://codelabs.developers.google.com/codelabs/polymer-bluetooth/index.html#0" target="_blank">Polymer element</a> for it!</li>
+          <li>checkout the <a href="https://google.github.io/physical-web/" target="_blank">Physical Web</a> !</li>
+        </ul>
+      </section>
+
+      <!-- <section>
         <h3>Web RTC</h3>
         <p>United we stand.</p>
-      </section>
+      </section> -->
 
       <section>
         <h1>thank you</h1>
+      </section>
+
+      <section data-transition="zoom">
+        <h1>one more thing...</h1>
+        <h3>(check source code!)</h3>
       </section>
 
       <section class="last">

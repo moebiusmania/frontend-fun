@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "live-server ./slides -p 8080",
+    "start": "live-server ./slides --port=8090",
     "deploy": "gh-pages -d slides"
   },
   "dependencies": {
