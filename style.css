@@ -1,0 +1,47 @@
+
+.reveal ul > li{
+  list-style: circle;
+  margin: 11px 0;
+  opacity: 0.9;
+}
+
+.reveal ul.links > li a {
+  color: white;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.reveal ul.links > li a:hover {
+  transform: scale(1.2);
+  border-bottom: 2px solid white;
+}
+
+h2 > small,
+.reveal ul > li > span,
+h1 span, h3 span,
+.reveal p span{
+  color: #fff;
+  background: #FF5E99;
+  text-shadow: none;
+  opacity: 0.9;
+}
+
+h1 span{
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+.reveal section.last img,
+.reveal section.noborder img{
+  border: 0;
+}
+
+img.grumpy{
+  transform: scale(0.8);
+  transform-origin: top;
+}
+
+/* .reveal ul > li > span{
+  color: #13DAEC;
+} */

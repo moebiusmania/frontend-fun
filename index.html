@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/hakimel/reveal.js/master/css/reveal.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/hakimel/reveal.js/master/css/theme/league.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.rawgit.com/hakimel/reveal.js/master/js/reveal.js"></script>
+
+  <script src="./examples/gamepad.js"></script>
+
+  <title>Making frontend fun again!</title>
+</head>
+<body>
+
+  <gamepad-api></gamepad-api>
+
+  <div class="reveal">
+    <div class="slides">
+      <section class="first">
+        <h1>Making frontend</h1>
+        <h1>fun again!</h1>
+        <h2><small>...still stuck on boring tabular data?</small></h2>
+        <hr>
+        <p>by Salvatore Laisa @ Milano Frontend 30/01/2018</p>
+      </section>
+      
+      <section>
+        <h1>About you</h1>
+        <ul>
+          <li class="fragment">developers?</li>
+          <li class="fragment">designers?</li>
+          <li class="fragment">musicians?</li>
+          <li class="fragment">artists?</li>
+          <li class="fragment">anything else?</li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>About me</h1>
+        <ul>
+          <li>Started as <span>Web Designer</span> in 2006</li>
+          <li>Now Senior <span>Frontend Developer</span> @ Radicalbit</li>
+          <li><span>Kung fu</span> Viet-vo-dao & <span>Tai Chi</span> practitioner</li>
+          <li>DK fighting the Burning Legion (<span>Lammorte</span>)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Agenda</h2>
+        <ol>
+          <li>Down the memory lane</li>
+          <li>What about now</li>
+          <li>The "common" ones...</li>
+          <li>...and the odd ones!</li>
+        </ol>
+      </section>
+      
+      <section>
+        <h1>Down the memory lane</h1>
+        <h2><small>--- Flash, Flash everywhere! ---</small></h2>
+      </section>
+
+      <section>
+        <h3>What was so great with Flash? (and the "beginning" of frontend development)</h3>
+        <h1 class="fragment"><span>creativity</span></h1>
+      </section>
+
+      <section>
+        <h3>Designing & coding (great) experiences</h3>
+        <p>HTML & CSS had really strong contraints at the time, so Flash was the right environment for creative designer and
+          coders that wanted to create "wow"- factor experiences on the web.
+        </p>
+      </section>
+
+      <section>
+        <h3>What has been created?</h3>
+        <p>Many cool things like: <span>engagement websites</span>, <span>games</span> (<i>there were more Flash games then that
+        HTML5 ones today</i>), <span>animated movies/series</span>, <span>augmented reality "stuff"</span>.</p>
+      </section>
+
+      <section class="noborder">
+        <img src="./assets/flash-ar.jpg" alt="">
+      </section>
+
+      <section>
+        <h1>What about now</h1>
+        <h2><small>--- enterprise, but not THAT one... ---</small></h2>
+      </section>
+
+      <section>
+        <h3>Ten years later...</h3>
+        <p>We now have incredibly powerful browsers, a Javascript standalone runtime (Node.js), third parties plugins almost
+          extinghuished, HTML+CSS+JS now leveraged to do what we want them to do!
+        </p>
+        <h3 class="fragment"><span>and what we are building on daily basis?</span></h3>
+      </section>
+
+      <section class="noborder">
+        <img src="./assets/form.png" alt="">
+      </section>
+
+      <section class="noborder">
+        <h3>We also have benchmarks based on how many "rows-per-seconda-a-framework-can-draw"</h3>
+        <img src="./assets/benchmark.png" alt="">
+      </section>
+
+      <section>
+        <h1>That's the most awesomeness ever! Isn't it?</h1>
+      </section>
+
+      <section class="noborder" data-transition="zoom" data-background-color="#fff">
+        <img class="grumpy" src="./assets/grumpy.jpg" alt="">
+      </section>
+
+      <section>
+        <h1>The "common" ones...</h1>
+        <h2><small>--- don't underestimate the (apparently) obvious ---</small></h2>
+      </section>
+
+      <section>
+        <ul class="links">
+          <li class="fragment">
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content" target="_blank">audio/video tag</a>
+          </li>
+          <li class="fragment">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation" target="_blank">Geolocation</a>
+          </li>
+          <li class="fragment">
+            <a href="https://www.createjs.com/easeljs" target="_blank">Canvas</a>
+          </li>
+          <li class="fragment">
+            <a href="https://github.com/MakhBeth/Talks/tree/Web-Animation-Api-2-the-vengeance" target="_blank">CSS & JS animations</a>
+          </li>
+          <li class="fragment">
+            <a href="https://threejs.org/" target="_blank">Web GL</a>
+          </li>
+          <li class="fragment">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" target="_blank">Indexed DB</a>
+          </li>
+          <li class="fragment">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API" target="_blank">Web Notifications</a>
+          </li>
+        </ul>
+        <p><a class="fragment" href="https://developer.mozilla.org/en-US/docs/WebAPI" target="_blank">GOTO AND DOCUMENT!</a></p>
+      </section>
+
+      <section>
+        <h3>What other kind of less boring stuff we can do?</h3>
+        <ul>
+          <li class="fragment">
+            <a href="https://revealjs.com/#/" target="_blank">slides <i>(like these ones...)</i></a>
+          </li>
+          <li class="fragment">
+            2D/<a href="https://github.com/kripken/BananaBread/" target="_blank">3D</a> games 
+          </li>
+          <li class="fragment">(interactive) movies/animations</li>
+          <li class="fragment">
+            <a href="https://dev.to/johnmunsch/hooking-your-javascript-app-to-ifttt" target="_blank">Your own automations</a>
+          </li>
+          <li class="fragment">
+            <a href="https://developer.atlassian.com/blog/2015/11/scripting-with-node/" target="_blank">[Node.js] CLI tools</a>
+          </li>
+          <li class="fragment">
+            <a href="http://johnny-five.io/" target="_blank">[Node.js] IoT apps</a>
+          </li>
+        </ul>
+        <p class="fragment">amazingly, they <span>don't</span> require forms or tables!</p>
+      </section>
+
+      <section>
+        <h3>Unfortunately, something was lost...</h3>
+        <ul>
+          <li>text regions</li>
+          <li>text exclusions </li>
+          <li>pagination templates <i>(probably killed by web-components)</i></li>
+          <li>CSS custom filters (shaders)</li>
+        </ul>
+
+        <p><a href="https://www.slideshare.net/moebiusmania/cosa-ci-sar-dopo-i-css3-reprise">
+          (when they were the future...)</a></p>
+      </section>
+
+      <section>
+        <h1>...and the odd ones!</h1>
+        <h2><small>--- ("engine room... WARP SPEED!") ---</small></h2>
+      </section>
+
+      <section class="noborder">
+        <h3>Gamepad API</h3>
+        <p>Plug & play... in the browser!</p>
+        <img src="" alt="">
+      </section>
+
+      <section>
+<pre><code data-trim>
+  window.addEventListener("gamepadconnected", (e) => { 
+    console.log("Gamepad connected at index %d: %s. %d buttons, %d axes.",
+      e.gamepad.index, e.gamepad.id, 
+      e.gamepad.buttons.length, 
+      e.gamepad.axes.length); 
+  });
+</code></pre>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API">Using the Gamepad API</a></p>
+      </section>
+
+      <section>
+        <h3>Issues</h3>
+        <ul>
+          <li>status: <span>working draft</span></li>
+          <li>works only in Chrome & Firefox but...</li>
+          <li>... with incosistent API </li>
+          <li>Xbox controller on MacOS requires addiotional drivers</li>
+        </ul>
+      </section>
+
+      <section class="noborder">
+        <h3>Browser API (???)</h3>
+        <p>Oh, that Nolan movie with Leonardo Dicaprio!</p>
+        <img src="./assets/inception.gif" alt="">
+      </section>
+
+      <section>
+<pre><code data-trim>
+  // An iframe tag can become a nested target
+  const browser = document.querySelector('iframe');
+
+  browser.reload();
+  browser.goBack();
+  browser.goForward();
+  browser.zoom(zoomFactor);
+
+</code></pre>
+        <h3>I hope you will find some meaning about this...</h3>
+      </section>
+
+      <section>
+        <h3>Web Audio</h3>
+        <h3 class="fragment"><span>processing and synthesizing audio!</span></h3>
+        <p class="fragment">thought it's <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API" target="_blank">a bit hard</a> ... but many 
+          <a href="http://webaudioapi.com/samples/" target="_blank">resources</a> 
+          are available.</p>
+      </section>
+
+      <section class="noborder">
+        <p>you can also build a <span>guitar tuner</span> out of it!</p>
+        <img src="./assets/tuner.png" alt="">
+        <p><a href="https://aerotwist.com/blog/guitar-tuner/">https://aerotwist.com/blog/guitar-tuner/</a></p>
+      </section>
+
+      <section>
+        <h3>Web MIDI</h3>
+        <p><span>Musical Instrument Digital Interface</span></p>
+        <ul class="fragment">
+          <li>Web audio manipulates sound, MIDI executes sounds</li>
+          <li>Musical instruments can have MIDI capabilities</li>
+          <li>you can create music or connect an instrument to the computer</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Bluetooth</h3>
+        <p>Proximity has never been <a href="https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web" target="_blank">closer</a>!</p>
+<pre><code data-trim>
+  navigator.bluetooth.requestDevice(options).then(device => { 
+    log('> Name: ' + device.name); 
+    log('> Id: ' + device.id); 
+    log('> Connected: ' + device.gatt.connected); 
+  }) .catch(error => { log('Argh! ' + error); });
+</code></pre>
+      </section>
+
+      <section>
+        <h3>Bluetooth: heads up!</h3>
+        <ul>
+          <li>works only in Chrome</li>
+          <li>GATT compatible</li>
+          <li>API based on promises</li>
+          <li>there is a <a href="https://codelabs.developers.google.com/codelabs/polymer-bluetooth/index.html#0" target="_blank">Polymer element</a> for it!</li>
+          <li>checkout the <a href="https://google.github.io/physical-web/" target="_blank">Physical Web</a> !</li>
+        </ul>
+      </section>
+
+      <!-- <section>
+        <h3>Web RTC</h3>
+        <p>United we stand.</p>
+      </section> -->
+
+      <section>
+        <h1>thank you</h1>
+      </section>
+
+      <section data-transition="zoom">
+        <h1>one more thing...</h1>
+        <h3>(check source code!)</h3>
+      </section>
+
+      <section class="last">
+        <img src="./assets/folks.jpg" alt="">
+      </section>
+
+    </div>
+  </div>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="./slides.js"></script>
+  
+</body>
+</html>
